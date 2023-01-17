@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: steelblue;
+}
+
+.empty{
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: 3px solid;
+  background-color: white;
+}
+
+.fill{
+  background-image: url('https://images.pexels.com/photos/1561020/pexels-photo-1561020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.hold{
+  border: solid 5px #ccc;
+}
+
+.hover{
+  background-color: #333;
+  border-color: white;
+  border-style: dashed;
+}
+
+/* media queries */
+@media (max-width: 768px){
+  body{
+    flex-direction: column;
+  }
+}
+
